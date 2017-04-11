@@ -11,3 +11,19 @@
 .about-section {
   padding: 45px 0 40px 0;
 }
+.services-section::after {
+  background: none;
+}
+.team-image .image-box {
+  max-height: 485px;
+}
+.trail-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  margin: 25px auto 100px auto;
+}
