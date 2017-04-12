@@ -30,3 +30,6 @@
 .instagram-feed .sec-title-two h2 {
   color: #444;
 }
+.about-title span {
+  display: inline-block;
+}
