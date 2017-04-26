@@ -18,37 +18,54 @@
     <title>Fred Meijer River Valley Trails</title>
   </head>
   <body>
-    <div class="page-wrapper">
-      <div class="preloader"></div>
-      <header class="main-header">
-        <div class="main-box">
-          <div class="auto-container">
-            <div class="outer-container clearfix">
-              <div class="logo-box">
-                <div class="logo"><a href="index.html"><img src="images/placeholder_logo.jpg" alt="River Valley Trails Logo"></a></div>
-              </div>
-              <div class="nav-outer clearfix">
-                <nav class="main-menu">
-                  <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                  </div>
-                  <div class="navbar-collapse collapse clearfix">
-                    <ul class="navigation clearfix">
-                      <li class="current"><a href="/">Home</a></li>
-                      <li><a href="/events.html">Events</a></li>
-                      <li><a href="/trail-map.html">Trail Map</a></li>
-                      <li><a href="/our-board.html">Our Board</a></li>
-                      <li><a href="mailto:fmrvrtfriends@gmail.com">Contact Us</a></li>
-                      <li><a href="www.lowellareatrailway.org">Lowell Area Recreation</a></li>
-                    </ul>
-                  </div>
-                </nav>
-                <div class="btn-outer"><a class="theme-btn quote-btn btn-style-one" href="donate.html">DONATE</a></div>
-              </div>
+    <header class="main-header">
+      <div class="main-box">
+        <div class="auto-container">
+          <div class="outer-container clearfix">
+            <div class="logo-box">
+              <div class="logo"><a href="index.html"><img src="images/placeholder_logo.jpg" alt="River Valley Trails Logo"></a></div>
+            </div>
+            <div class="nav-outer clearfix">
+              <nav class="main-menu">
+                <div class="navbar-header">
+                  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="navbar-collapse collapse clearfix">
+                  <ul class="navigation clearfix">
+                    <li id="nav-home"><a href="/">Home</a></li>
+                    <li id="nav-events"><a href="/events.html">Events</a></li>
+                    <li id="nav-trail-map"><a href="/trail-map.html">Trail Map</a></li>
+                    <li id="nav-our-board"><a href="/our-board.html">Our Board</a></li>
+                    <li><a href="mailto:fmrvrtfriends@gmail.com">Contact Us</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="btn-outer"><a class="theme-btn quote-btn btn-style-one" href="https://paypal.me/fmrvrt">DONATE</a></div>
             </div>
           </div>
         </div>
-      </header>
+        <script>
+          var path = window.location.pathname
+          switch(path) {
+            case '/':
+              document.querySelector('#nav-home').classList.add('current')
+              break
+            case '/events.html':
+              document.querySelector('#nav-events').classList.add('current')
+              break
+            case '/trail-map.html':
+              document.querySelector('#nav-trail-map').classList.add('current')
+              break
+            case '/our-board.html':
+              document.querySelector('#nav-our-board').classList.add('current')
+              break
+            }
+          
+        </script>
+      </div>
+    </header>
+    <div class="page-wrapper">
+      <div class="preloader"></div>
       <section class="main-slider" data-start-height="850" data-slide-overlay="yes">
         <div class="tp-banner-container">
           <div class="tp-banner">
@@ -61,7 +78,7 @@
                   <h2>River Valley Rail Trails</h2>
                 </div>
                 <div class="tp-caption sfr sfb tp-resizeme" data-x="left" data-hoffset="400" data-y="center" data-voffset="20" data-speed="1500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn"></div>
-                <div class="tp-caption sfr sfb tp-resizeme" data-x="left" data-hoffset="400" data-y="center" data-voffset="90" data-speed="1500" data-start="1000" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn"><a class="theme-btn btn-style-two" href="#">Donate Today</a> &ensp;&ensp; <a class="theme-btn btn-style-three" href="#">Learn More</a></div>
+                <div class="tp-caption sfr sfb tp-resizeme" data-x="left" data-hoffset="400" data-y="center" data-voffset="90" data-speed="1500" data-start="1000" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn"><a class="theme-btn btn-style-two" href="https://paypal.me/fmrvrt">Donate Today</a> &ensp;&ensp; <a class="theme-btn btn-style-three" href="#">Learn More</a></div>
               </li>
             </ul>
             <div class="tp-bannertimer"></div>
@@ -96,7 +113,7 @@
         <div class="auto-container">
           <h2>THE BEST TIME TO <span class="theme_color">HELP US</span> IS NOW</h2>
           <div class="text">The only way to finish this trail is to take action!</div>
-          <div class="buttons-box"><a class="theme-btn btn-style-two" href="#">Donate Today</a> <a class="theme-btn btn-style-three" href="#">Learn More</a></div>
+          <div class="buttons-box"><a class="theme-btn btn-style-two" href="https://paypal.me/fmrvrt">Donate Today</a> <a class="theme-btn btn-style-three" href="#">Learn More</a></div>
         </div>
       </section>
       <section class="instagram-feed">
@@ -189,16 +206,16 @@
         <div class="auto-container">
           <div class="sec-title">
             <h3>The Michigan Trail Family</h3>
-            <h2>All Our Network</h2>
+            <h2>Our Regional Network</h2>
           </div>
           <div class="row clearfix">
             <div class="team-member col-md-4 col-sm-6 col-xs-12">
               <div class="inner-box">
-                <div class="image-box"><img src="https://res.cloudinary.com/due1qfixq/image/upload/v1491534953/IMG_2763_xez0vb.jpg" alt="">
+                <div class="image-box"><a href="www.cistrail.org"><img src="http://res.cloudinary.com/due1qfixq/image/upload/v1493160359/8d3ba2d82ea92e1caed670da96e670f9_dhyvuy.jpg" alt="FM Clinton-Ionia-Shawasee"></a>
                   <div class="overlay-box">
                     <div class="user-info">
-                      <div class="text">Volunteer</div>
-                      <h4>Robert Florian</h4>
+                      <div class="text">CIS</div>
+                      <h4>FM Clinton-Ionia-Shawasee</h4>
                     </div>
                     <ul class="social-icon-two">
                       <li><a href="https://www.facebook.com/robboflo"><span class="fa fa-facebook"></span></a></li>
@@ -210,16 +227,15 @@
             </div>
             <div class="team-member col-md-4 col-sm-6 col-xs-12">
               <div class="inner-box">
-                <div class="image-box"><img src="https://res.cloudinary.com/due1qfixq/image/upload/v1491535395/George_piidhn.png" alt="George Piidhin">
+                <div class="image-box"><a href="www.fredmeijerheartlandtrail.org"><img src="http://res.cloudinary.com/due1qfixq/image/upload/v1493160123/fred-meijer-heartland-trail-michigan_jkqjbl.jpg" alt="FM Heartland Trail"></a>
                   <div class="overlay-box">
                     <div class="user-info">
-                      <div class="text">Volunteer</div>
-                      <h4>George Raimer</h4>
+                      <div class="text">FMHT</div>
+                      <h4>FM Heartland Trail</h4>
                     </div>
                     <ul class="social-icon-two">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                      <li><a href="https://www.facebook.com/robboflo"><span class="fa fa-facebook"></span></a></li>
+                      <li><a href="https://twitter.com/mirealestaterob"><span class="fa fa-twitter"></span></a></li>
                     </ul>
                   </div>
                 </div>
@@ -227,16 +243,15 @@
             </div>
             <div class="team-member col-md-4 col-sm-6 col-xs-12">
               <div class="inner-box">
-                <div class="image-box"><img src="http://res.cloudinary.com/due1qfixq/image/upload/v1491533062/IMG_2704_uldc0r.jpg" alt="Alan Rumbaugh">
+                <div class="image-box"><a href="www.lowellareatrailway.org"><img src="http://res.cloudinary.com/due1qfixq/image/upload/v1493159756/IMG_2125_emlkmv.jpg" alt="Lowell Area Rec. Authority"></a>
                   <div class="overlay-box">
                     <div class="user-info">
-                      <div class="text">Volunteer</div>
-                      <h4>Alan Rumbaugh</h4>
+                      <div class="text">LARA</div>
+                      <h4>Lowell Area Rec. Authority</h4>
                     </div>
                     <ul class="social-icon-two">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                      <li><a href="https://www.facebook.com/robboflo"><span class="fa fa-facebook"></span></a></li>
+                      <li><a href="https://twitter.com/mirealestaterob"><span class="fa fa-twitter"></span></a></li>
                     </ul>
                   </div>
                 </div>
@@ -245,76 +260,97 @@
           </div>
         </div>
       </section>
-      <footer class="main-footer">
-        <div class="auto-container">
-          <div class="widgets-section">
-            <div class="row clearfix">
-              <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                <div class="row clearfix">
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget about-widget">
-                      <div class="footer-logo">
-                        <figure><a href="index.html"><img src="images/logo-2.png" alt=""></a></figure>
-                      </div>
-                      <div class="widget-content">
-                        <div class="text">
-                          <p>Lifting people social challenge democracy micro fight against malnutrition, think tank social innovation global health truth dignity civic engagement.</p>
-                          <div class="call-number">Call us <span>+04 2345 6789</span></div>
-                        </div>
+    </div>
+    <footer class="main-footer">
+      <div class="auto-container">
+        <div class="widgets-section">
+          <div class="row clearfix">
+            <div class="big-column col-md-6 col-sm-12 col-xs-12">
+              <div class="row clearfix">
+                <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                  <div class="footer-widget about-widget">
+                    <div class="footer-logo">
+                      <figure><a href="index.html"><img src="images/logo-2.png" alt=""></a></figure>
+                    </div>
+                    <div class="widget-content">
+                      <div class="text">
+                        <p>Lifting people social challenge democracy micro fight against malnutrition, think tank social innovation global health truth dignity civic engagement.</p>
+                        <div class="call-number">Call us <span>+04 2345 6789</span></div>
                       </div>
                     </div>
                   </div>
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget posts-widget">
-                      <h2>LATEST POSTS</h2>
-                      <div class="widget-content">
-                        <div class="posts">
-                          <div class="post">
-                            <figure class="post-thumb"><img src="images/resource/post-thumb-1.jpg" alt=""></figure>
-                            <div class="desc-text"><a href="#">Recycling Plastic Bottles</a></div>
-                            <div class="time">26.11.2016</div>
-                          </div>
-                          <div class="post">
-                            <figure class="post-thumb"><img src="images/resource/post-thumb-2.jpg" alt=""></figure>
-                            <div class="desc-text"><a href="#">Recycling Plastic Bottles</a></div>
-                            <div class="time">26.11.2016</div>
-                          </div>
-                          <div class="post">
-                            <figure class="post-thumb"><img src="images/resource/post-thumb-3.jpg" alt=""></figure>
-                            <div class="desc-text"><a href="#">Recycling Plastic Bottles</a></div>
-                            <div class="time">26.11.2016</div>
-                          </div>
+                </div>
+                <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                  <div class="footer-widget posts-widget">
+                    <h2>LATEST POSTS</h2>
+                    <div class="widget-content">
+                      <div class="posts">
+                        <div class="post">
+                          <figure class="post-thumb"><img src="images/resource/post-thumb-1.jpg" alt=""></figure>
+                          <div class="desc-text"><a href="#">Recycling Plastic Bottles</a></div>
+                          <div class="time">26.11.2016</div>
+                        </div>
+                        <div class="post">
+                          <figure class="post-thumb"><img src="images/resource/post-thumb-2.jpg" alt=""></figure>
+                          <div class="desc-text"><a href="#">Recycling Plastic Bottles</a></div>
+                          <div class="time">26.11.2016</div>
+                        </div>
+                        <div class="post">
+                          <figure class="post-thumb"><img src="images/resource/post-thumb-3.jpg" alt=""></figure>
+                          <div class="desc-text"><a href="#">Recycling Plastic Bottles</a></div>
+                          <div class="time">26.11.2016</div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                <div class="row clearfix">
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget gallery-widget">
-                      <h2>Instagram</h2>
+            </div>
+            <div class="big-column col-md-6 col-sm-12 col-xs-12">
+              <div class="row clearfix">
+                <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                  <div class="footer-widget gallery-widget">
+                    <h2>Instagram</h2>
+                    <div class="widget-content">
                       <div class="widget-content">
-                        <div class="widget-content">
-                          <div class="images-outer clearfix">
-                            <script src="//lightwidget.com/widgets/lightwidget.js"></script>
-                            <iframe class="lightwidget-widget" src="//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html" scrolling="no" allowtransparency="true" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-                          </div>
+                        <div class="images-outer clearfix">
+                          <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+                          <iframe class="lightwidget-widget" src="//lightwidget.com/widgets/026e977d32b4593c928356a384af77c7.html" scrolling="no" allowtransparency="true" style="width: 100%; border: 0; overflow: hidden;"></iframe>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget contact-widget">
-                      <h2>SUBSCRIBE</h2>
-                      <div class="widget-content">
-                        <div class="text">Design thinking diversification efficient recognize potential communities human potential governance change.</div>
-                        <div class="newsletter-one">
-                          <form method="post" action="contact.html">
-                            <div class="form-group">
-                              <input type="email" name="email" value="" placeholder="Enter your Email" required=""> 
-                              <button class="theme-btn" type="submit"><span class="fa fa-paper-plane-o"></span></button>
+                </div>
+                <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                  <div class="footer-widget contact-widget">
+                    <h2>SUBSCRIBE</h2>
+                    <div class="widget-content">
+                      <div class="text">Design thinking diversification efficient recognize potential communities human potential governance change.</div>
+                      <div class="newsletter-one">
+                        <form method="post" action="contact.html">
+                          <div class="form-group">
+                            <input type="email" name="email" value="" placeholder="Enter your Email" required=""> 
+                            <button class="theme-btn" type="submit"><span class="fa fa-paper-plane-o"></span></button>
+                          </div>
+                        </form>
+                        <div class="newsletter-one" id="mc_embed_signup">
+                          <form class="validate" id="mc-embedded-subscribe-form" action="//fmrvrt.us15.list-manage.com/subscribe/post?u=bb013089d2be0521f27bd04ee&amp;id=698886a04f" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+                            <div class="form-group" id="mc_embed_signup_scroll">
+                              <h2>Subscribe to our mailing list</h2>
+                              <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label> 
+                                <input class="required email" id="mce-EMAIL" type="email" value="" name="EMAIL">
+                              </div>
+                              <div class="clear" id="mce-responses">
+                                <div class="response" id="mce-error-response" style="display:none;"></div>
+                                <div class="response" id="mce-success-response" style="display:none;"></div>
+                              </div>
+                              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_bb013089d2be0521f27bd04ee_698886a04f" tabindex="-1" value="">
+                              </div>
+                              <div class="clear">
+                                <input class="button theme-btn" id="mc-embedded-subscribe" type="submit" name="subscribe"><span class="fa fa-paper-plane-o"></span>
+                              </div>
                             </div>
                           </form>
                         </div>
@@ -326,25 +362,26 @@
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div class="auto-container">
-            <div class="copyright-text">&copy; 2017 Podgorica. All Rights Reserved.</div>
-          </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="auto-container">
+          <div class="copyright-text">&copy; 2017 Podgorica. All Rights Reserved.</div>
         </div>
-      </footer>
-    </div>
-    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/revolution.min.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/jquery.fancybox-media.js"></script>
-    <script src="js/owl.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/appear.js"></script>
-    <script src="js/jquery.mixitup.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/app.js" type="text/js"></script>
+      </div>
+    </footer>
   </body>
+  <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/revolution.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.fancybox-media.js"></script>
+  <script src="js/owl.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/jquery.mixitup.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/test.js" type="text/js"></script>
+  <script src="js/app.js" type="text/js"></script>
 </html>
