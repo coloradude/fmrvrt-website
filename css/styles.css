@@ -42,3 +42,16 @@
 .team-member .inner-box .overlay-box:before {
   border-right: 500px solid transparent;
 }
+.gallery-section {
+  margin-top: 50px;
+}
+.text p {
+  font-size: 17px;
+}
+.gallery-item .inner-box .image {
+  background-size: cover;
+  background-position: center;
+}
+.gallery-item .inner-box .image img {
+  visibility: hidden;
+}
