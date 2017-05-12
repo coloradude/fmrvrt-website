@@ -81,3 +81,7 @@
 #foxyform_embed_link_871815 {
   display: none !important;
 }
+.team-section .team-member .profile-pic {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
